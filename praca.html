@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PrivateWebSide2</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/327a0d490c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="iconA fab fa-asymmetrik text-primary mr-sm-4"></i>
+                wini<span class="text-primary">cjusz </span> cyboran</a>
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse"
+                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars px-2"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="index.html">o mnie</a>
+                    <a class="nav-item nav-link" href="codes.html">kodowanie</a>
+                    <a class="nav-item nav-link active" href="#">praca<span class="sr-only">(current)</span></a>
+                    <!-- dla czytników ekranów. Aby w navigacji bylo podświetlenie strony gdzie jesteś to przerzucamy klasę activ z index do obecnej strony-->
+                    <a class="nav-item nav-link" href="muza.html">muza</a>
+                    <a class="nav-item nav-link" href="pasje.html">pasje</a>
+                    <a class="nav-item nav-link" href="contact.html">Kontakt</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="top-hero aboutus-hero">
+            <!--to jest sekcja na zdjęcie  z cieniem i napisem na zdjęciu, zdjęcie podlinkujemy w css jako background -->
+            <div class="hero-shadow"></div>
+            <p class="top-hero-text text-light">praca</p>
+        </section>
+
+        <section class="aboutus-top p-5">
+            <!--padding aby tresc w mniejszych ekranach nie przylegała do krawedzi i aby sekcja trochę urosła, następnie w tym divie dajemy  div class="row" a w nim  dopiero div class="container" z paddingiem na Y  aby jeszcze urosło następnie w środek wklejamy  w paragraf p o class="display-3" ( 1 to  największy text  a 5 najmniejszy text)  ikonę  z nazwą firmy z loga  i w css zmieniamy ją na uppercase a poniżej wklejamy dwa paragrafy p z Lorem   -->
+            <div class="row">
+                <div class="container py-5">
+                    <p class="display-4 text-center text-one">
+                        Praca podczas studiów i tuż po :-)
+                    </p>
+                    <p class="text-center">W czasach studenckich pracowałem jako pracownik obsługi biura handlowego w
+                        firmie "Interton"
+                        Gdynia
+                        (obecnie "Intertor Classic"), a następnie na analogicznym stanowisku w firmie "Med-Service"
+                        Gdańsk oraz grywałem „joby”
+                        w trójmiejskich klubach. Tak minął mi czasu kęs, aż do momentu kiedy wstąpiłem do służby w
+                        Policji w Gdyni.</p>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="border-top border-bottom aboutus-info aboutus-shadow">
+            <!-- w tej sekcji dajemu border od góry i od dołu bo chcemy mieć rozgraniczenie miedzy sekcjami jak na wzorze, aboutus-info to nasza klasa wewnętrzna -->
+            <div class="container">
+                <!-- w kontenerze są trzy pod sekcje  tj. lewy text zdjęcie na środku i prawy text, kolumny textu mają po trzy kolumny składowe od rozmiaru lg , w dużych rozmiarach będą te elementy obok siebie  a na małych wskoczą nad siebie na wzajem -->
+                <div class="row m-0 justify-content-center">
+                    <!-- pozbycie się auto margin i wycentrowanie  wewnątrz elementów -->
+
+                    <div class="col-lg-4 aboutus-text aboutus-text-left">
+                        <!-- to jest kolumna trzy kolumnowa od rozmiaru lg  a w rozmiarze mniejszym ma ona domyślnie 12 kolumn składowych  - dla lewego tekstu -->
+                        <h3>Praca w Policji w 3mieście</h3>
+                        <p> W 2000r. zostałem zatrudniony w Wydziale Dochodzeniowo - Śledczym
+                            Komisariatu Policji I w Gdyni. Noooooooo!!! to było mocne doświadczenie „życiowo -
+                            zawodowe”, przeżyć coś „takiego” w XXI wieku, w środku Europy, w „teoretycznie” wolnym kraju
+                            :-). Gdybym nie przepracował w tym urzędzie 20 lat oraz nie poznał osób które spędziły tam
+                            np.
+                            30 lat, to nie uwierzył bym, że coś "takiego" może mieć miejsce w "majestacie" "prawa"
+                            :-))).
+                            Na początku nie było tak „zdumiewająco”, ale dla mnie subiektywnie od przełomu 2013r./2014r.
+                            ( a pracowałem już wówczas w Krakowie od 2003r.) zaczęły następować liczne „złe zmiany" w
+                            standardach formalnych oraz merytorycznych pracy. </p>
+                    </div>
+
+                    <div class="d-lg-none col aboutus-img"></div>
+                    <!-- to jest div widoczny tylko na mniejszych urzadzeniach poniżej rozmiaru lg a w lg jest już niewidoczny i ten div na domyślniecol róny 12 a jest wpisany tylko wyraz col !!!!!!!!!!!!!-->
+                    <div class="d-none d-lg-block col-lg-4 aboutus-img"></div>
+                    <!-- ten div jest widoczny tylko na urzadzenieach wiekszych jak osiągnie rozmiar lg to będzie blokowy i przez to widoczny a tej powyzej zniknie - one się zamienią - i ten  ma ustawione  4 kolumny składowe. Zostawiammy jeszzce dwie kolumny w zapasie aby  mieć więcej miejsca na naszą tersć !!!!!!!!!!!! to div zdjęciowy ma 4 kol a tekstowe divy mają po 3 kolumny  i dlatego zostaje nam w zapasie jeszcze 2 kolumny !!!!!!!!!!. -->
+
+                    <div class="col-lg-4 aboutus-text aboutus-text-right">
+                        <!-- a to jest kolumna  trzy kolumnowa od rozmiaru lg  a w rozmiarze mniejszym ma ona domyślnie 12 kolumn składowych - dla prawego tekstu -->
+                        <h3>Praca w Policji w Krakowie</h3>
+                        <p>W Krakowie pracowałem od początku 2003 r. do końca lutego 2020 r. (czyli do przejścia na
+                            „mundurową” emeryturę) w Wydziale Dochodzeniowo - Śledczym KP II Kraków, realizując
+                            postępowania dla Prokuratury Rejonowej Kraków Śródmieście Wschód, Kraków Prądnik
+                            Biały, Kraków Nowa Huta i innych, w
+                            znacznej części przy udziale rozlicznych klinik krakowskich, oczywiście z ZMS Collegium
+                            Medicum UJ Kraków na czele, a także Instytutem Ekspertyz Sądowych w Krakowie. Sporadycznie
+                            pojawiały się
+                            czynności procesowe realizowane dla Prokuratury Okręgowej. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+    <footer class="bg-dark text-light">
+        <!-- footer standard-->
+        <p class="py-5 px-3 mb-0 text-center">2021 &copy; Copyright <i
+                class="iconA ml-3 fab fa-asymmetrik text-primary mr-4"></i>wini<span class="text-primary">cjusz </span>
+            cyboran</p>
+
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

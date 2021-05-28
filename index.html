@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PrivateWebSide2</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/327a0d490c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <div class="container">
+            <!-- dzieki container nav jest na środku strony i ograniczona ale pasek od nav jest na cała szerokość strony bo w/w nav główny class="navbar...." jest po wyżej containera -->
+            <a class="navbar-brand" href="#"><i class="iconA fab fa-asymmetrik text-primary mr-sm-4"></i>
+                wini<span class="text-primary">cjusz </span> cyboran</a>
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse"
+                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars px-2"></i>
+                <!--zamieniony oryginalny butto z bootstrapa na tez z fonyawesome i dodany padding na X aby pole kliknięcia na małych ekranach było nieco większe i usunięcie bordera przez dodanie classy na buttonie w postaci border-0-->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <!--dzięki margin left tj.  ml- auto przyciski od nav są po prawej a nav bar brand -logo jest po  lewij stronie nawigacji  -->
+                    <a class="nav-item nav-link active" href="#">o mnie <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="codes.html">kodowanie</a>
+                    <!-- hrefy są bez # bo odwołujemy się do nazw plików a nie do jakiegokolwiek id-->
+                    <a class="nav-item nav-link" href="praca.html">praca</a>
+                    <a class="nav-item nav-link" href="muza.html">muza</a>
+                    <a class="nav-item nav-link" href="pasje.html">pasje</a>
+                    <a class="nav-item nav-link" href="contact.html">Kontakt</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <header>
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <!--karuzela z Bootstrapa  with captions -->
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner text-light text-center">
+                <!--text biały i wyśrodkowany-->
+                <div class="carousel-item carousel-img-one active">
+                    <!--z wnętrza itemów oryginalnej karuzeli bootstrapa wyrzuciliśmy wszystko zastepując poniższymi naszymi divami, dodaliśmy swoją klasę carousel-img-one aby pod tą klasę później podpiąć obrazy, poniżej h-100 dla wysokości 100% rodzica padding5 d-flex aby były flexem, flex-column aby były w kolumnie z góry na dół justify-cotent end aby napisy na telefonach były na dole, justify-content - md-center aby się na większych ekranach napisy wyśrodkowały w pionie i teraz gdy jesteśmy w systemie column to align-items-center aby się  wyśrodkowało na osi X !!!!!!. Następnie w tym glównym divie dajemy diva z cieniem a w nim p z display-3 dla hasła i poniżej p dla mniejszego tekstu ale chcemy aby w telefonach nie bylo go  widać to dodajemy d-none, a gdy osiągniem  wymiar small to dajemy na display-block, => tj. d-sm-block aby jużbył od sm widoczny!!!!!!!!!!   -->
+                    <div
+                        class="carousel-text h-100 p-5 d-flex flex-column justify-content-end justify-content-md-center align-items-center">
+                        <div class="hero-shadow"></div> <!-- to jest dodany cień -->
+                    </div>
+                </div>
+                <div class="carousel-item carousel-img-two">
+                    <div
+                        class="carousel-text h-100 p-5 d-flex flex-column justify-content-end justify-content-md-center align-items-center">
+                        <div class="hero-shadow"></div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-img-three">
+                    <div
+                        class="carousel-text h-100 p-5 d-flex flex-column justify-content-end justify-content-md-center align-items-center">
+                        <div class="hero-shadow"></div>
+                    </div>
+                </div>
+
+                <div class="carousel-item carousel-img-four">
+                    <div
+                        class="carousel-text h-100 p-5 d-flex flex-column justify-content-end justify-content-md-center align-items-center">
+                        <div class="hero-shadow"></div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-img-five">
+                    <div
+                        class="carousel-text h-100 p-5 d-flex flex-column justify-content-end justify-content-md-center align-items-center">
+                        <div class="hero-shadow"></div>
+                    </div>
+                </div>
+
+                <div class="carousel-item carousel-img-six">
+                    <div
+                        class="carousel-text h-100 p-5 d-flex flex-column justify-content-end justify-content-md-center align-items-center">
+                        <!--<div class="hero-shadow"></div>-->
+
+                    </div>
+                </div>
+
+            </div>
+            <!--poniżej buttony do karuzeli -->
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="home-accodion">
+            <div class="container about-info py-5 text-center">
+                <div class="row">
+                    <!-- dlatego ze w kontenerze daliśmy py-5 to odsuwa text od góry i od dołu aby nie był zbyt blisku wyzej położonych kafalek, a text-centert z poniższą  klasą col wyśrodkowuje zarówno tekst jaki  ewentualne elementy  -->
+                    <div class="col">
+                        <p class="display-4"><i class="iconA fab fa-asymmetrik text-primary mr-sm-4"></i>
+                            wini<span class="text-primary">cjusz </span> cyboran </p>
+                        <!-- display-3 dla p daje wielkość napisu  1 bardzo duzy a 5 bardzo mały, w-50  to odaje to ze hrka zajmuje 50% szerokości rodzica  a mx-auto to jets margin na osi X - auto wyśrodkowuje ją,  -->
+                        <hr class="w-75 mx-auto mt-4 mb-5">
+
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <!-- w klasie btn dodaliśmy klasę text dark i klasę text decoration none z wiadomych powodów  -->
+                                        <button class="btn btn-link text-dark text-decoration-none" type="button"
+                                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            INTRO
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p class="m-0 text-justify">Pochodzę z rodziny, którą losy powojenne „rzuciły”
+                                            do Gdyni. Moi rodzice byli dość wiekowi – rocznik 30 i 31, stąd też moje
+                                            rodzeństwo jest „nieco”starsze ode mnie - jedyny żyjący brat - Dariusz
+                                            „Krzysztof” - o 20 lat, a św. pamięci Ireneusz - o 15 lat. Miałem szczęście,
+                                            że
+                                            byli oni dużo starsi ode mnie, gdyż część ich doświadczenia życiowego (w tym
+                                            muzycznego) w naturalny sposób "spłynęła” na mnie. To pozwoliło mi, bez
+                                            większych urazów fizycznych i psychicznych, przeżyć i dorastać w portowej
+                                            dzielnicy Gdynia-Grabówek :-). Po licznych przygodach edukacyjno-zawodowych
+                                            z początkiem 2003r., zamieszkałem w Krakowie, gdzie przeprowadziłem się za
+                                            moją
+                                            małżonką (zwaną małą-żonką) Beatą. Żartujemy sobie, że spławiłem się z
+                                            3Miasta
+                                            Wisłą pod prąd. Przeprowadzka w drugą stronę byłaby mniej sensownym
+                                            posunięciem, gdyż z racji mojej ówczesnej pracy mogłem funkcjonować zawodowo
+                                            w dowolnym miejscu. Dla Beaty zmiana „firmy” z UJ na inną, była znacznie
+                                            bardziej problematyczna. Po uzyskaniu nazwijmy to stabilizacji zawodowej i
+                                            „zdobyciu” dwóch kredytów hipotecznych, na świat - jeszcze wówczas normalny
+                                            - przyszły nasze dzieci - Marek obecnie 15 latek i Bartek 12 latek. Od tej
+                                            pory nigdy nie miałem już wystarczającej ilości czasu dla siebie i
+                                            podejrzanie szybko każdego dnia chciało mi się spać :-) . </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed text-dark text-decoration-none"
+                                            type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            EDUKACJA FORMALNA
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p class="m-0 text-justify"> Ukończyłem Liceum Mechaniki Precyzyjnej w Gdańsku
+                                            oraz
+                                            Podstawową Szkołę Muzyczną w Gdyni. Następnie po rocznym „romansie” z
+                                            Wydziałem Elektrycznym Wyższej Szkoły Morskiej w Gdyni (która znajdowała się
+                                            na przeciwko mojego rodzinnego bloku :-)), rozpocząłem studia na Wydziale
+                                            Historii Wyższej Szkoły Pedagogicznej w Słupsku. Nawet jak na tamte czasy
+                                            była to spora zmiana zainteresowań edukacyjnych :-). „Uwidoczniły” się u
+                                            mnie wówczas „wolne moce przerobowe”, przez co na trzecim roku studiów
+                                            równolegle podjąłem naukę w Studium Pomaturalnym Wyższej Szkoły Bankowości w
+                                            Poznaniu - oddział w Gdańsku (tzw. WSB). Po zdobyciu magisterki w WSP w
+                                            Słupsku, kontynuowałem naukę na „podyplomówce” w WSB Poznań - w dalszym
+                                            ciągu na specjalności bankowość. To w tamtych studenckich czasach zrodziła
+                                            się u mnie „pasja” do rozwijania wiedzy o finansach i inwestowaniu, dzięki
+                                            której (pomimo niezbyt spektakularnych dochodów mojej rodziny) w tzw.
+                                            „dorosłym życiu” mogłem „pozbyć” się dwóch kredytów hipotecznych, nie
+                                            oddając przy tym niebotycznego haraczu banksterom :-). Pasję tą rozwijam do
+                                            dzisiaj, i dlatego („już” lub „w końcu” - jak kto woli :-)) mogę obecnie
+                                            robić to co chcę, a nie to co muszę!!! :-). Dalszy ciąg tej historii
+                                            znajdziecie w dziale „praca”.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed text-dark text-decoration-none"
+                                            type="button" data-toggle="collapse" data-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            EDUKACJA NIEFORMALNA
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body ">
+                                        <p class="m-0 text-justify">Po skończeniu Podstawowej Szkoły Muzycznej nie
+                                            zakończyłem edukacji muzycznej. Rozwijałem dalej swoje umiejętności w
+                                            oparciu o prywatne lekcje gry na fortepianie. Trwało to do początku moich
+                                            czasów
+                                            studenckich i uruchomiło u mnie samokształcenie prowadzone z pomocą
+                                            poznanych w 3Mieście instrumentalistów reprezentujących różne kierunki
+                                            muzyczne. To wówczas poznałem Piotrka Manię, Patryka Stachurę, Witolda
+                                            Podhajskiego, Andrzeja Smugę, Kubę Staruszkiewicza, Sławka Jaskułke, Piotra
+                                            Lemańczyka, Dariusza Herbasza i wielu wielu innych. Duża część z nich gra do
+                                            dzisiaj i utrzymuje się z muzyki - co jest sporym wyzwaniem w tej szerokości
+                                            geograficznej :-). To dzięki tym osobom oraz moim starszym braciom, mogłem
+                                            rozwijać się muzycznie, instrumentalnie, jak i warsztatowo, co
+                                            zaowocowało możliwością muzykowania w tym gronie i nie tylko - zarówno
+                                            publicznie jak i prywatnie. Kolejnym krokiem w moim rozwoju muzycznym była
+                                            przeprowadzka do Krakowa, gdzie dzięki mojej żonie poznałem kilku
+                                            miejscowych muzyków (niektórzy z nich byli wówczas jeszcze studentami mojej
+                                            żony :-) ). To oni pomogli mi dalej rozwijać się i realizować kolejne
+                                            projekty muzyczne. Więcej informacji na ten temat znajduje się na
+                                            podstronie „muza”.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-boxes">
+            <div class="container text-center">
+                <!-- dajemy  już w container text-center aby jego dzieci juz to dziedziczyły, -->
+                <div class="row">
+                    <!-- dajemy  jeden row aby wszystko było w rzedzie -->
+
+
+                    <div class="col-md-4 home-box mb-5 mb-md-0">
+                        <!--ten div od rozmiaru md będzie miał 4 kolumny  dlatego będą to trzy divy po 4 kolumny w rzedzie a na mniejszych ekranach deafoultowo po 12 kolumn i dlatego będzieą one pod sobą i dlatego na małych rozmiarach maja mb-5 a od md , mb jest na -0, -->
+                        <i class="fab fa-github-square mb-4 text-primary"></i>
+                        <h1><strong>GitHub</strong></h1>
+                        <p class="m-0">Repozytoria zawieszone pod adresami:</p>
+                        <a href="https://www.github.com/Winicjusz1" rel="noreferer noopener"
+                            target="_blank"><strong>www.github.com/Winicjusz1</strong></a>
+                        <a href="https://www.github.com/Winicjusz2" rel="noreferer noopener"
+                            target="_blank"><strong>www.github.com/Winicjusz2</strong></a>
+
+
+
+                    </div>
+
+
+                    <div class="col-md-4 home-box mb-5 mb-md-0">
+                        <i class="fab fa-facebook-square mb-4 text-primary"></i>
+                        <h1><strong>Facebook</strong></h1>
+                        <p class="m-0 text-center"> Zapraszam do śledzenia mojego profilu</p>
+                        <a href="https://www.facebook.com" rel="noreferer noopener"
+                            target="_blank"><strong>www.facebook.com</strong></a>
+
+
+                    </div>
+
+
+                    <div class="col-md-4 home-box mb-5 mb-md-0">
+                        <i class=" fab fa-facebook-messenger  mb-4 text-primary"></i>
+                        <h1><strong>Messenger</strong></h1>
+                        <p class="m-0 text-center"> Zapraszam do kontaktu przez messenger'a</p>
+                        <a href="https://www.messenger.com" rel="noreferer noopener"
+                            target="_blank"><strong>www.messenger.com</strong></a>
+
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="home-passion mb-1">
+            <!--to jest sekcja zdjęcia z napisem na wierzchu - dla sekcji home-->
+
+            <div class="hero-shadow"></div>
+            <!--dodany cień -->
+
+
+            <div class="row m-0 h-100 align-items-center text-light">
+                <!--wyzerowujemy margin bo jak dodajemy row to pojawiają sie jakieś automatyczne marginy, align-items na center i jasny text - light-->
+
+                <div class="col">
+                    <!--tu będzie automatycznie 12 kolumn szerokości!!!!!!!!!!-->
+
+                    <div class="container p-5">
+                        <!--ten container !!!!!!!!!! w srodku w/w kolumny i ponizej dwa napisy tj. p z display-4 i zwykłe p. -->
+                        <p class="display-4">Composing code?</p>
+                        <p class="additional-text">I love these "puzzles" and arranging them :-) it's like
+                            harmony in jazz.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main><!-- koniec main który zawiera home-boxes, home-passion, home-brand, -->
+
+    <footer class="bg-dark text-light">
+        <!-- footer standard-->
+        <p class="py-5 px-3 mb-0 text-center">2021 &copy; Copyright <i
+                class="iconA ml-3 fab fa-asymmetrik text-primary mr-4"></i>wini<span class="text-primary">cjusz </span>
+            cyboran</p>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

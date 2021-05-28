@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PrivateWebSide2</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/327a0d490c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="iconA fab fa-asymmetrik text-primary mr-sm-4"></i>
+                wini<span class="text-primary">cjusz </span> cyboran</a>
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse"
+                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars px-2"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="index.html">o mnie</a>
+                    <a class="nav-item nav-link" href="codes.html">kodowanie</a>
+                    <a class="nav-item nav-link" href="praca.html">praca</a>
+                    <a class="nav-item nav-link" href="muza.html">muza</a>
+                    <a class="nav-item nav-link" href="pasje.html">pasje</a>
+                    <a class="nav-item nav-link active" href="#">Kontakt<span class="sr-only">(current)</span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="top-hero contact-hero">
+            <div class="hero-shadow"></div>
+            <p class="top-hero-text text-light">kontakt</p>
+        </section>
+
+        <section class="contact py-5">
+            <!--zbiorcza sekcja dla całego  pisanego kontaktu-->
+            <div class="container">
+                <!--zbiorczy container a w nim nagłówek, text dodany, div-row z divem md-5 dla adresów i obok kolejny div- md-7 z formularzem -->
+
+                <div class="text-center py-4">
+                    <p class="display-3 text-one">Napisz do mnie!</p>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-5 col-lg-4">
+                        <!-- w divie md5 jest div z borderem padingiem marginesem i textem wyśrodkowaym a w nim h2 h3h p oraz wewnetrzny mały div z  ikoną logo i nazwy firmy -->
+                        <div class="border p-5 mb-4 text-center">
+                            <h2>dane kontaktowe</h2>
+                            <p>Winicjusz Cyboran</p>
+                            <h3 class="mt-4">adres</h3>
+                            <p>ul. Lipińskiego 5</p>
+                            <p>30-349 Kraków</p>
+                            <h3 class="mt-4">telefon</h3>
+                            <p>+48 609 536 245</p>
+                            <h3 class="mt-4">e-mail</h3>
+                            <p>winicjuszcyboran@gmail.com</p>
+                            <div class="contact-logo mt-5 pt-4 mb-n3 border-top">
+                                <!-- mb-n3 to jest ujemny ( negative) margines aby logo nie odstawało na pełnym ekranie od krawedzi od dolnej krawędzi  tej karty !!!!!!!!!!!!!!-->
+                                <p class="display-5"><i
+                                        class="iconA fab fa-asymmetrik text-primary mr-sm-2"></i>wini<span
+                                        class="text-primary">cjusz </span> cyboran </p>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-7 col-lg-8">
+                        <div class="border py-5 text-center">
+                            <!--w zbiorczym divie col-7 jest zbiorczy div z borderem padingiem i wycentrowaną trescią dla dzieci, poniżej jest tytuł  w h2 a nizej formularz z class="mt-5" a w nim zbiorczy div-row a w nim divy z danymi osobowymi i innymi  danymi  mające po md-6 aby więcej niz dwa obok siebie nie wchodziły  -->
+                            <h2>mapa dojazdu</h2>
+                            <div class="mt-4">
+                                <div class="row">
+                                    <section class="col-12 contact-map pb-1">
+                                        <div class="container d-flex flex-column align-items-center">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20501.484622542306!2d19.91841085790172!3d50.035987226666045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165c99a0c02967%3A0xf7d1ba23024b2c7a!2zV2FjxYJhd2EgTGlwacWEc2tpZWdvIDUsIDMwLTM0OSBLcmFrw7N3!5e0!3m2!1spl!2spl!4v1617374408737!5m2!1spl!2spl"
+                                                style="border:0;" allowfullscreen="" loading="lazy"></src=>
+                                            </iframe>
+
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+    <footer class="bg-dark text-light">
+        <!-- footer standard-->
+        <p class="py-5 px-3 mb-0 text-center">2021 &copy; Copyright <i
+                class="iconA ml-3 fab fa-asymmetrik text-primary mr-4"></i>wini<span class="text-primary">cjusz </span>
+            cyboran</p>
+
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
